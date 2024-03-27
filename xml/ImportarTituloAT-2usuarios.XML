@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<BANCOLIGHT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.arisp.com.br/xsd/BDLIGHT_OPCAO1.xsd">
+  <INDIVIDUO>
+    <NOME>GEST TEST J</NOME>
+    <CNPJCPF>69287639000104</CNPJCPF>
+    <NMATRICULA>841351</NMATRICULA>
+    <TIPODEATO>Venda e compra</TIPODEATO>
+    <DTREGAVERB>27032024</DTREGAVERB>
+    <DTVENDA>27032024</DTVENDA>
+  </INDIVIDUO>
+</BANCOLIGHT>

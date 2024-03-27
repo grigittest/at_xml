@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Arquivos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Arquivos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Arquivo</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody id="arquivosTableBody"></tbody>
+    </table>
+
+    <script>
+        function adicionarLinhaTabela(nomeArquivo, urlArquivo) {
+            var tabela = document.getElementById('arquivosTableBody');
+            var novaLinha = tabela.insertRow(tabela.rows.length);
+            var colunaNome = novaLinha.insertCell(0);
+            var colunaURL = novaLinha.insertCell(1);
+
+            // Adiciona um link para a URL
+            colunaNome.innerHTML = nomeArquivo;
+            colunaURL.innerHTML = `<a href="${urlArquivo}" target="_blank">${urlArquivo}</a>`;
+        }
+
+        // Adiciona manualmente informações sobre os arquivos na tabela
+        adicionarLinhaTabela('ImportarTituloAT_1', '/xml/ImportarTituloAT_1.XML');
+    </script>
+
+</body>
+</html>
